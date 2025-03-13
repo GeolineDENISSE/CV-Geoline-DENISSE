@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Geoline Denisse" />
+    <meta name="description"
+        content="CV de développeur web et web mobile en formation professionnelle avec Simplon.co, à l'écoute d'opportunités (projets, stages)." />
+    <meta name="keywords" content="développeur web, web mobile, HTML, CSS, JS, JavaScript, stage, projets">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+
+    <!--L'ensemble des emojis utilisés viennent de : https://emojidb.org/-->
+
+    <header class="page-extremes">
+        <div id="cv-title">
+
+            <h1 id="author-name">
+                <span id="author-string" class="displayInline">👩🏻‍💻 Geoline DENISSE</span>
+                <span id="author-bin" class="displayNone">01000111 01100101 01101111 01101100 01101001 01101110 01100101
+                    00100000
+                    01000100 01000101 01001110 01001001 01010011 01010011 01000101</span>
+                <span id="cursor">_</span>
+
+            </h1>
+
+            <p>>> <span>🎯</span> Développeur Web et Web Mobile en formation</p>
+            <section>
+                <ul>
+                    <li class="info"><span>🏡</span> Clermont-Ferrand</li>
+                    <li class="info"><span>📧</span> geoline.denisse@gmail.com</li>
+                    <li class="info"><span>📱</span><span>06-43-59-33-58</span></li>
+                    <li class="info"><span>🚗</span> Permis B <span>🚠</span> Tram</li>
+                </ul>
+
+            </section>
+        </div>
+
+        <nav>
+            <ul id="nav-list">
+                <li class="nav-items"><a href="#experiences-title">Expériences</a></li>
+                <li class="nav-items"><a href="#formations-title">Formations</a></li>
+                <li class="nav-items"><a href="#gh-title">Réalisations</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div>
+            <section class="cv-sect">
+                <h2 id="presentation-title">>> Présentation</h2>
+
+                <p>
+                    ✨Après une formation longue dans le domaine de l'audit financier et contrôle de gestion,
+                    ainsi qu'une première expérience en tant que contrôleur financier, je souhaite me réorienter
+                    dans les domaines du développement et de la data.✨
+                </p>
+            </section>
+
+            <section class="cv-sect">
+                <h2 id="gh-title">>>> <span>📂</span> Repos GitHub</h2>
+
+                <section id="repos-gh">
+                    <div id="display">
+
+                    </div>
+                </section>
+            </section>
+
+            <section class="cv-sect">
+                <h2 id="experiences-title">>>> <span>💼</span> Expériences</h2>
+
+                <ul id="experiences">
+                    <li class="experience">
+                        <ul class="experience-infos">
+                            <li class="info">>> Immersion pro métier Développeur web</li>
+                            <li class="info">> 4.71</li>
+                            <li class="info">> Juin 2024 - 15 jours</li>
+                            <li class="info">> Clermont-Ferrand</li>
+                            <li class="info">
+                                Analyse et organisation des fonctionnalités de l'application web
+                                en workflow cohérent et sous forme de diagramme
+                                <br>> Stack rencontré: script: Python ; DAG: AirFlow ; éditeur: VSCode-Jupyter ;
+                                Conteneurisation: Docker
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="experience">
+                        <ul class="experience-infos">
+                            <li class="info">>> Contrôle externe des satellites - CDD</li>
+                            <li class="info">> Conseil Départemental du Puy-de-Dôme</li>
+                            <li class="info">> 2021-04 à 2023-12 - 2 ans 4 mois</li>
+                            <li class="info">> Clermont-Ferrand</li>
+                            <li class="info">
+                                Réalisation de diagnostics financiers des structures financées et suivies
+                                par la collectivité;<br> Participation à l'automatisation du travail de contrôleur
+                                externe côté utilisateur du logiciel métier
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="experience">
+                        <ul class="experience-infos">
+                            <li class="info">>> Assitant consolidation et normes IFRS - stage Master 1</li>
+                            <li class="info">> Limagrain (Siège)</li>
+                            <li class="info">> Avril 2019 à Août 2019 - 5 mois</li>
+                            <li class="info">> Saint-Bauzire</li>
+                            <li class="info">
+                                Assitance au paramétrage du logiciel dédié à la gestion des contrats
+                                de crédit-bail, en adéquation avec la règlementation comptable internationale;<br>
+                                Participation aux travaux de clôture des comptes consolidés du groupe
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="xp-avenir" class="experience displayNone">
+                        <ul class="experience-infos">
+                            <li class="info">
+                                Ajout d'expériences à venir :]
+                            </li>
+                        </ul>
+                    </li>
+                    <button onclick="toggleHiddenXp()" id="show-xp" type="button" class="button-plus">+
+                        d'expériences</button>
+                </ul>
+
+            </section>
+
+            <section class="cv-sect">
+                <h2 id="formations-title">>>> <span>📚</span> Formations</h2>
+
+                <ul id="formations">
+                    <li class="formation">
+                        <ul class="formation-infos">
+                            <li class="info">>> Développement Web & Web Mobile</li>
+                            <li class="info">> Simplon Clermont-Ferrand</li>
+                            <li class="info">> 9 mois - Du 16-12-2024 au 09-10-2025</li>
+                            <li class="info">
+                                Réaliser une page web dynamique en HTML, CSS & JS;<br>
+                                Associer une base de données à un site web avec PHP;<br>
+                                Modéliser et créer une base de données avec UML et phpMyAdmin;<br>
+                                Réaliser la maquette d'un site internet;<br>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="formation">
+                        <ul class="formation-infos">
+                            <li class="info">>> Master Comptabilité Contrôle Audit</li>
+                            <li class="info">> IAE Ecole de Management - Clermont-Ferrand</li>
+                            <li class="info">> 3 ans - De 2018 à 2021</li>
+                            <li class="info">
+                                Parcours bilingue français/anglais;<br>
+                                Echange universitaire avec l'université Konkuk<br>
+                                (1an à Séoul, Corée du Sud);<br>
+                                Validation des épreuves du DSCG<br>
+                                (expertise comptable)
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="formation">
+                        <ul class="formation-infos">
+                            <li class="info">>> Licence Droit Economie Gestion<br>parcours Langues Vivantes<br>option
+                                Comptabilité</li>
+                            <li class="info">> UCA - Clermont-Ferrand</li>
+                            <li class="info">> 2 ans - De 2016 à 20218</li>
+                            <li class="info">
+                                Parcours bilingue français/anglais;<br>
+                                Erasmus à la Hochschule Aalen<br>
+                                (6 mois à Aalen, Allemagne);<br>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="curs-avenir" class="formation displayNone">
+                        <ul class="formation-infos">
+                            <li class="info">
+                                Ajout de formations à venir :]
+                            </li>
+                        </ul>
+                    </li>
+
+                    <button onclick="toggleHiddenCurs()" id="show-curs" type="button" class="button-plus">+ de
+                        formations</button>
+                </ul>
+
+            </section>
+
+        </div>
+
+        <div>
+            <section class="cv-sect">
+                <h2>>>> <span>👩🏻‍💼</span> Soft Skills</h2>
+
+                <ul>
+                    <li class="info">
+                        > Persévérance
+                    </li>
+                    <li class="info">
+                        > Esprit d'équipe
+                    </li>
+                    <li class="info">
+                        > Autonomie
+                    </li>
+                    <li class="info">
+                        > Curiosité
+                    </li>
+                </ul>
+            </section>
+
+            <section class="cv-sect">
+                <h2>>>> <span>🛠️</span> Stack Technique</h2>
+
+                <h3>>> <span>💬</span> Langages</h3>
+
+                <ul>
+                    <li class="info">> <span>🦴</span> HTML && <span>🎨</span> CSS && <span>🤸‍♀️</span> JavaScript</li>
+                    <li class="info">> <span>🐘</span> PHP</li>
+                    <li class="info">> <span style="margin-left:5px;">🛢</span><span>SQL</span></li>
+
+                </ul>
+
+                <h3>>> <span>💾</span> Logiciels</h3>
+
+                <ul>
+                    <li class="info">> <span>➰ </span>Visual Studio Code</li>
+                    <li class="info">> <span>🔃 </span>GitHub / Git bash</li>
+                    <li class="info">> <span style="margin-left:5px;">🛢</span><span>phpMyAdmin</span></li>
+                    <li class="info">> <span>🌟 </span>StarUML</li>
+                </ul>
+            </section>
+
+            <section class="cv-sect">
+                <h2>>> <span>🌎</span> Langues étrangères</h2>
+
+                <ul id="lang-list">
+                    <li class="lang" id="eng">>💂🏻 Anglais : C1</li>
+                    <li class="lang-niveau" id="eng-level"></li>
+                    <li class="lang" id="cn">>🐼 Chinois : A2/B1</li>
+                    <li class="lang-niveau" id="cn-level"></li>
+                    <li class="lang" id="kr">>🌸 Coréen : A1</li>
+                    <li class="lang-niveau" id="kr-level"></li>
+                    <li class="lang" id="es">>💃 Espagnol : notions</li>
+                    <li class="lang-niveau" id="es-level"></li>
+                </ul>
+            </section>
+
+            <section class="cv-sect">
+                <h2>>>> <span>😎</span> Centres d'intérêts et loisirs</h2>
+
+                <ul id="hobbies">
+                    <li class="info">
+                        > Dramas asiatiques<br>
+                        (Corée du Sud, Chine, Japon, Thaïlande)
+                    </li>
+                    <li class="info">
+                        > Chinois mandarin
+                    </li>
+                    <li class="info">
+                        > Web novel et webtoon
+                    </li>
+                    <li class="info">
+                        > Musique
+                    </li>
+                    <li class="info">
+                        > Développement web<br>
+                        et programmation informatique
+                    </li>
+
+
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="page-extremes">
+        <p>Designed by Geoline DENISSE</p>
+    </footer>
+
+
+
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>
