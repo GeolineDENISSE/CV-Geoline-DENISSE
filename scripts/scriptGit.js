@@ -10,30 +10,30 @@ const reposDiv = document.getElementById("repos-gh");
 const display = document.querySelector("#display")
 
 // Fonction pour récupérer et afficher les données du profil GitHub
-async function fetchGitHubProfile(username) {
-    try {
-        const response = await fetch(`https://api.github.com/users/${username}`);
-        if (!response.ok) {
-            throw new Error(`GitHub user not found: ${response.statusText}`);
-        }
-        const data = await response.json();
+// async function fetchGitHubProfile(username) {
+//     try {
+//         const response = await fetch(`https://api.github.com/users/${username}`);
+//         if (!response.ok) {
+//             throw new Error(`GitHub user not found: ${response.statusText}`);
+//         }
+//         const data = await response.json();
 
-        // Construire le contenu HTML à partir des données du profil
-        const profileHTML = `
-            <img src="${data.avatar_url}" alt="${data.login}'s avatar" style="width: 150px; border-radius: 50%; margin-bottom: 10px;">
-            <h2>${data.name || data.login}</h2>
-            <p>${data.bio || "No bio available."}</p>
-            <p>Public Repositories: ${data.public_repos}</p>
-            <a href="${data.html_url}" target="_blank" style="text-decoration: none; color: blue;">View GitHub Profile</a>
-        `;
+//         // Construire le contenu HTML à partir des données du profil
+//         const profileHTML = `
+//             <img src="${data.avatar_url}" alt="${data.login}'s avatar" style="width: 150px; border-radius: 50%; margin-bottom: 10px;">
+//             <h2>${data.name || data.login}</h2>
+//             <p>${data.bio || "No bio available."}</p>
+//             <p>Public Repositories: ${data.public_repos}</p>
+//             <a href="${data.html_url}" target="_blank" style="text-decoration: none; color: blue;">View GitHub Profile</a>
+//         `;
 
-        // Insérer le contenu dans la div
-        profileDiv.innerHTML = profileHTML;
-    } catch (error) {
-        profileDiv.innerHTML = `<p>Error: ${error.message}</p>`;
-    }
+//         // Insérer le contenu dans la div
+//         profileDiv.innerHTML = profileHTML;
+//     } catch (error) {
+//         profileDiv.innerHTML = `<p>Error: ${error.message}</p>`;
+//     }
 
-}
+// }
 
 // Fonction pour récupérer et afficher les dépôts publics GitHub
 async function fetchGitHubRepos(username) {
@@ -73,57 +73,9 @@ display.addEventListener("click", async () => {
 
 
 // Appeler les fonctions avec votre nom d'utilisateur GitHub
-const username = "PythonTester971"; // Remplacez par votre nom d'utilisateur GitHub
+const username = "GeolineDENISSE"; // Remplacez par votre nom d'utilisateur GitHub
 fetchGitHubProfile(username);
 
 
 
 
-//Affiche à côté du nom son code binaire au "mousemove"
-
-function getCursorElement() {
-
-    let cursor = document.querySelector('#cursor');
-
-    return cursor;
-
-}
-
-function toggleBin() {
-
-    let geolineDenisseBin = document.querySelector('#author-bin');
-
-    geolineDenisseBin.classList.toggle("displayInline");
-
-}
-
-
-//Méthode d'affichage : "mousemove"
-cursor.addEventListener('mousemove', function () {
-
-
-    toggleBin();
-
-
-});
-
-
-
-
-
-// faire apparaître les expériences et formations supplémentaires "+ de ..."
-
-let xpAvenir = document.querySelector('#xp-avenir');
-let cursAvenir = document.querySelector('#curs-avenir')
-
-
-
-function toggleHiddenXp() {
-
-    xpAvenir.classList.toggle("displayBlock");
-}
-
-function toggleHiddenCurs() {
-
-    cursAvenir.classList.toggle("displayBlock");
-}
