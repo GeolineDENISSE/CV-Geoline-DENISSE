@@ -99,8 +99,7 @@ nav {
 /*design commun à toutes les sections*/
 .cv-sect {
   border-bottom: dashed yellow 1px;
-  padding-bottom: 8px;
-  padding-left: 30px;
+  padding: 8px 30px;
 }
 
 /*SECTIONS "EXPERIENCES" et "FORMATIONS"*/
