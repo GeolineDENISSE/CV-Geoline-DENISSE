@@ -1,56 +1,54 @@
 /*mise en forme générale des balises d'encadrement*/
 body {
-    background-color: #000000;
-    min-height: 100vh;
-    color: #FFFFFF;
-    font-family: "Handjet", serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-        "ELGR" 1,
-        "ELSH" 2;
-    padding-left: 8px;
-    padding-right: 15px;
-    display: flex;
-    flex-direction: column;
+  background-color: #000000;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: "Handjet", serif, "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "ELGR" 1, "ELSH" 2;
+  padding-left: 8px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
-    /* display:flex;
+  flex: 1;
+  /* display:flex;
     flex-wrap:nowrap; */
 }
 
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 li {
-    list-style: none;
-    margin-bottom: 10px;
+  list-style: none;
+  margin-bottom: 10px;
 }
 
 .button-plus {
-    display: block;
-    background-color: rgb(9, 2, 223);
-    border: rgb(234, 251, 1) dotted 2px;
-    font-family: "Handjet", serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.5em;
-    color: #FFFFFF;
-    max-height: 30px;
-    align-self: center;
+  display: block;
+  background-color: rgb(9, 2, 223);
+  border: rgb(234, 251, 1) dotted 2px;
+  font-family: "Handjet", serif, "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  color: #ffffff;
+  max-height: 30px;
+  align-self: center;
 }
-
-
 
 /*design des zones d'organisation*/
 
 .page-extremes {
-    background-color: rgb(244, 113, 203);
-    background-size: cover;
-    width: 100%;
-    padding: 5px;
+  background-color: rgb(244, 113, 203);
+  background-size: cover;
+  width: 100%;
+  padding: 5px;
 }
 
 /*design commun <header> et <footer>*/
@@ -63,122 +61,116 @@ li {
         display:inline;
     } */
 #cursor:hover {
-    color: aqua;
+  color: aqua;
 }
 
 /*éléments de la barre de navigation*/
 nav {
-    padding: 0;
+  padding: 0;
 }
 
 #nav-list {
-    max-width: 100%;
-    /*border: solid black 0.1px;*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 0;
-    gap: 10px;
+  max-width: 100%;
+  /*border: solid black 0.1px;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  gap: 10px;
 }
 
 .nav-items {
-    max-width: 60%;
-    font-weight: 400;
-    border: solid 2px rgb(234, 251, 1);
-    background-color: rgb(9, 2, 223);
-    /*box-shadow: ;*/
-    padding: 5px;
-    margin-right: 4px;
-    margin-bottom: 2px;
-    text-align: center;
+  max-width: 60%;
+  font-weight: 400;
+  border: solid 2px rgb(234, 251, 1);
+  background-color: rgb(9, 2, 223);
+  /*box-shadow: ;*/
+  padding: 5px;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  text-align: center;
 }
 
 .nav-items a {
-    font-size: 1em;
-    color: #ffffff;
-    text-decoration: none;
+  font-size: 1em;
+  color: #ffffff;
+  text-decoration: none;
 }
-
-
 
 /*MAIN*/
 /*design commun à toutes les sections*/
 .cv-sect {
-    border-bottom: dashed yellow 1px;
-    padding-bottom: 8px;
-    padding-left: 30px;
+  border-bottom: dashed yellow 1px;
+  padding-bottom: 8px;
+  padding-left: 30px;
 }
 
 /*SECTIONS "EXPERIENCES" et "FORMATIONS"*/
 #experiences,
 #formations {
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
 }
 
 .experience,
 .formation {
-    display: block;
-    width: 450px;
-    border: dotted yellow 1px;
-    padding: 20px;
-    margin: 10px;
+  display: block;
+  width: 450px;
+  border: dotted yellow 1px;
+  padding: 20px;
+  margin: 10px;
 }
 
 .experience-infos,
 .formation-infos {
-    max-width: 100%;
-    font-weight: 500;
-    padding: 0;
-    list-style: none;
-    text-align: justify;
-    text-justify: newspaper;
-
+  max-width: 100%;
+  font-weight: 500;
+  padding: 0;
+  list-style: none;
+  text-align: justify;
+  text-justify: newspaper;
 }
 
 .info {
-    margin-bottom: 8px;
-
+  margin-bottom: 8px;
 }
-
-
 
 /*SECTION "LANGUES*/
 .lang {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 /*barres de niveau en langues*/
 .lang-niveau {
-    border: 3px solid darkslategray;
-    height: 8px;
-    padding-top: 0.7px;
-    padding-bottom: 0.7px;
-    margin-bottom: 10px;
-    /*width:200px;*/
-    border-radius: 5px;
-    background-color: #45EE06;
+  border: 3px solid darkslategray;
+  height: 8px;
+  padding-top: 0.7px;
+  padding-bottom: 0.7px;
+  margin-bottom: 10px;
+  /*width:200px;*/
+  border-radius: 5px;
+  background-color: #45ee06;
 }
 
 /*barre niveau d'anglais*/
 #eng-level {
-    width: 200px
+  width: 200px;
 }
 
 /*barre niveau de chinois*/
 #cn-level {
-    width: 75px;
+  width: 75px;
 }
 
 #kr-level {
-    width: 25px;
+  width: 25px;
 }
 
 #es-level {
-    width: 25px;
+  width: 25px;
 }
 
 /*ANIMATIONS NIVEAUX DE MAITRISE DE LANGUES*/
@@ -192,60 +184,56 @@ nav {
             to {width: 50px;}
         }*/
 
-
 /*SECTION DEMANDE DE CONTACT*/
 #contact-form {
-    margin-left: 35px;
+  margin-left: 35px;
 }
 
 input {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 10px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 input[type="submit"] {
-    background-color: yellow;
-    font-family: "Handjet", serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: yellow;
+  font-family: "Handjet", serif, "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*design specific au bouton du formulaire*/
 
-
-
 @media screen and (min-width: 1024px) {
-    h1 {
-        font-size: 4rem;
-    }
+  h1 {
+    font-size: 4rem;
+  }
 
-    h2 {
-        font-size: 2.5rem;
-    }
+  h2 {
+    font-size: 2.5rem;
+  }
 
-    p,
-    li {
-        font-size: 2rem;
-    }
+  p,
+  li {
+    font-size: 2rem;
+  }
 
-    .experiences {
-        width: 100%;
-    }
+  .experiences {
+    width: 100%;
+  }
 
-    .experience {
-        width: 100%;
-    }
+  .experience {
+    width: 100%;
+  }
 }
 
-
-
 .displayNone {
-    display: none;
+  display: none;
 }
 
 .displayInline {
-    display: inline;
+  display: inline;
 }
 
 .displayBlock {
-    display: block;
+  display: block;
 }
